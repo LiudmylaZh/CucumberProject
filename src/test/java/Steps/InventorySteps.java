@@ -42,7 +42,8 @@ public class InventorySteps extends BaseSteps{
 
     @Then("^The cart is empty$")
     public void theCartIsEmpty() {
-        inventoryPage.indicatorOfEmptyCart.shouldBe(Condition.empty);
+        inventoryPage.indicatorOfEmptyCart.shouldNotBe(Condition.exist);
+        //inventoryPage.indicatorOfAddedProductsToTheCart.shouldBe(Condition.empty);
 
     }
 

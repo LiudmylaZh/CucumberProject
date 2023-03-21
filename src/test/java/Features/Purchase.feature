@@ -8,7 +8,7 @@ Feature: Purchase
     When I add first product to the cart
     Then cart icon with value "1" is displayed
 
-
+  @current_test
   Scenario: The products from cart is deleted
     Given I open login page
     When I login successfully with username "standard_user" and password "secret_sauce"
@@ -18,7 +18,7 @@ Feature: Purchase
     Then Added products successfully deleted
     Then The cart is empty
 
-  @current_test
+
   Scenario: The products from cart is deleted
     Given I open login page
     When I login successfully with username "standard_user" and password "secret_sauce"
